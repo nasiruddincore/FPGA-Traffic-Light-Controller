@@ -1,0 +1,58 @@
+# ---------------------------------------------------
+# FPGA & VLSI Project .gitignore
+# ---------------------------------------------------
+
+# 1. Simulation Artifacts (Icarus Verilog / ModelSim / Vivado Sim)
+*.vcd
+*.out
+*.vvp
+*.wlf
+transcript
+modelsim.ini
+work/
+sim_build/
+xsim.dir/
+*.pb
+
+# 2. Xilinx Vivado Specific Artifacts
+*.jou
+*.log
+*.str
+*.dmp
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.xpr
+*.os
+# (Optional) If you want to keep the block design but ignore the wrappers:
+# *.bd
+
+# 3. Bitstreams and Programming Files (Compiled Hardware)
+# Note: Keep these out of source control. Upload them to GitHub 'Releases' instead.
+*.bit
+*.bin
+*.mcs
+*.prm
+*.sysdef
+*.hdf
+*.xsa
+
+# 4. Synthesis and Implementation Reports
+# If you want to share specific reports in your docs/ folder, manually add them.
+# Otherwise, ignore auto-generated ones.
+*.rpt
+*.mrp
+*.srp
+*.timing
+
+# 5. OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
